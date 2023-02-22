@@ -31,10 +31,10 @@ public enum HTTPTask {
     case uploadFile(URL)
 
     /// A "multipart/form-data" upload task.
-    case uploadMultipart([MultipartFormData])
+    case uploadMultipart(MultipartFormData)
 
     /// A "multipart/form-data" upload task  combined with url parameters.
-    case uploadCompositeMultipart([MultipartFormData], urlParameters: [String: Any])
+    case uploadCompositeMultipart(MultipartFormData, urlParameters: [String: Any])
 
     /// A file download task to a destination.
     case downloadDestination(DownloadDestination)
